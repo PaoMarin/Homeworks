@@ -1,0 +1,29 @@
+
+
+
+<?php
+
+$linea =0;
+
+
+  if ( ($archivo = fopen("C:\xamp\bin\php\products.csv") ) == NULL) 
+  {
+    printf("No se ha podido abrir el fichero %s.\n", $archivo);
+    resultado = FALLO;
+  }
+  else 
+  {
+   
+	while (($datos = fgetcsv($archivo, ','))
+	{
+		$num = count($datos);
+		$linea++;
+		 for($columna =0; columna < $num; $columna++)
+			{
+    
+      printf($linea);
+       printf("\n");
+    }
+  }
+ 
+}
